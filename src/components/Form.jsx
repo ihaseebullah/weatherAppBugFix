@@ -2,6 +2,7 @@ import { FiSearch } from "react-icons/fi";
 
 
 export const Form = ({ plhText, value, setter, loadWeatherData }) => {
+const[val, setVal]=useState("") 
     return (
         <form onSubmit={loadWeatherData} className="search-bar mt-2 mr-5 ml-auto flex justify-between items-center gap-3 bg-white/75 w-[25%] rounded-md">
             <input
